@@ -9,13 +9,13 @@ public static void main (String[] args){
 
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Ange övningens namn: ");
+    System.out.print("Ange övningens namn: ");
     String name = input.nextLine();
 
     System.out.print("Ange vikt (kg): ");
     int weight = input.nextInt();
 
-    System.out.println("Ange antal reps: ");
+    System.out.print("Ange antal reps: ");
     int reps = input.nextInt();
 
     // 2. Skapa objektet baserat på inmatningen
@@ -25,7 +25,7 @@ public static void main (String[] args){
     double estimated1RM = myExercise.calculator1RM();;
         
     System.out.println("\n--- 1RM ---");
-    System.out.println("Övning: " + myExercise.getName());
+    System.out.print("Övning: " + myExercise.getName());
     System.out.printf("Ditt uppskattade 1RM är: %.1f kg\n", estimated1RM);
         
     input.close();
